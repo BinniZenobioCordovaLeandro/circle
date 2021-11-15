@@ -3,9 +3,11 @@ import 'package:circle/translations/main_translation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:circle/pages/home_page.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 void main() {
   runApp(const MyApp());
+  Firebase.initializeApp();
 }
 
 class MyApp extends StatelessWidget {
